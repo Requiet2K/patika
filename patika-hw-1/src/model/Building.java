@@ -6,7 +6,7 @@ public class Building {
 
     private BigDecimal price;
     private Double squareMeter;
-    // for usage purpose of "3+1", meaning 3 rooms and 1 living room
+    // for usage purpose of "3+1", meaning 3 rooms and 1 salon
     private String roomNumber;
 
     public Building(BigDecimal price, Double squareMeter, String roomNumber) {

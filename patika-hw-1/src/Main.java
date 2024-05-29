@@ -40,14 +40,15 @@ public class Main {
 
         BuildingService buildingService = new BuildingServiceImpl(houseRepo, villaRepo, summerhouseRepo);
 
-        System.out.println("Total of house prices: " + buildingService.getTotalPrice(houseRepo));
-        System.out.println("Total of villa prices: " + buildingService.getTotalPrice(villaRepo));
-        System.out.println("Total of summerhouse prices: " + buildingService.getTotalPrice(summerhouseRepo));
-        System.out.println("Total of all building prices: " + buildingService.getAllBuildingsPrices());
-        System.out.println("Average of house square meters: " + buildingService.getAverageSquareMeter(houseRepo));
-        System.out.println("Average of villa square meters: " + buildingService.getAverageSquareMeter(villaRepo));
-        System.out.println("Average of summerhouse square meters: " + buildingService.getAverageSquareMeter(summerhouseRepo));
-        System.out.println("Total of all building square meters: " + buildingService.getAllBuildingsSquareMeters());
-        System.out.println("Buildings with 3+1 room: " + buildingService.filterByRoomNumber("3+1"));
+        System.out.println("Total price of houses: " + buildingService.getTotalPrice(houseRepo));
+        System.out.println("Total price of villas: " + buildingService.getTotalPrice(villaRepo));
+        System.out.println("Total price of summerhouses: " + buildingService.getTotalPrice(summerhouseRepo));
+        System.out.println("Total price of all buildings: " + buildingService.getAllBuildingsPrices());
+        System.out.println("Average square meters of houses: " + buildingService.getAverageSquareMeter(houseRepo));
+        System.out.println("Average square meters of villas: " + buildingService.getAverageSquareMeter(villaRepo));
+        System.out.println("Average square meters of summerhouses: " + buildingService.getAverageSquareMeter(summerhouseRepo));
+        System.out.println("Total square meters of all buildings: " + buildingService.getAllBuildingsSquareMeters());
+        System.out.println("Buildings with 3+1 rooms: " + buildingService.filterByRoomNumber("3+1"));
+
     }
 }
